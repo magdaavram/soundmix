@@ -70,7 +70,7 @@
                 var email = $('#email').val();
                 if (validateEmail(email)) {
                     $.ajax({
-                        url:"http://localhost:8080/v1.0/subscriptions",
+                        url:"https://api.soundmix.live/v1.0/subscriptions",
                         type:"POST",
                         data:JSON.stringify({
                             "email": email
@@ -86,6 +86,9 @@
 						success: function(data) {
 							$('#email').val('');
 							alert('You have successfully subscribed to Soundmix')
+                        },
+                        error: function() {
+                            alert('Oops, something went wrong!')
                         }
                     });
 
