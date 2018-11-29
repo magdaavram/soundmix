@@ -65,9 +65,44 @@
 	</body>
 	<script>
         $(document).ready(function(){
-            $("#submit-form").click(function(){
-                alert('Hello World');
+            $("#subscribe").click(function(event){
+                event.preventDefault();
+                var email = $('#email').val();
+                if (validateEmail(email)) {
+                    $.ajax({
+                        url:"https://api.soundmix.live/v1.0/subscriptions",
+                        type:"POST",
+                        data:JSON.stringify({
+                            "email": email
+                        }),
+                        contentType:"application/json; charset=utf-8",
+                        dataType:"json",
+                        headers: {
+                            'Access-Control-Allow-Credentials' : true,
+                            'Access-Control-Allow-Origin':'*',
+                            'Access-Control-Allow-Methods':'POST',
+                            'Access-Control-Allow-Headers':'application/json',
+                        },
+						success: function(data) {
+							$('#email').val('');
+							alert('You have successfully subscribed to Soundmix')
+                        },
+                        error: function() {
+                            alert('Oops, something went wrong!')
+                        }
+                    });
+
+                } else {
+                    alert("Please enter a valid email address")
+				}
             });
         });
+        function validateEmail(email)
+        {
+			if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+				return (true)
+			}
+			return (false)
+        }
 	</script>
 </html>
