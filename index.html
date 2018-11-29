@@ -52,8 +52,8 @@
 			<div class="contact middle">
 				<div>
 					<ul>
-						<li><a href="http://soundmix.live/wp-content/uploads/2018/11/Soundmix-Terms.pdf" target="_blank">Terms & Conditions</a></li>
-						<li><a href="http://soundmix.live/wp-content/uploads/2018/11/Soundmix-Privacy-Policy.pdf" target="_blank">Privacy Policy</a></li>
+						<li><a href="./Soundmix-Terms.pdf" target="_blank">Terms & Conditions</a></li>
+						<li><a href="./Soundmix-Privacy-Policy.pdf" target="_blank">Privacy Policy</a></li>
 					</ul>
 				</div>
 				
@@ -77,12 +77,6 @@
                         }),
                         contentType:"application/json; charset=utf-8",
                         dataType:"json",
-                        headers: {
-                            'Access-Control-Allow-Credentials' : true,
-                            'Access-Control-Allow-Origin':'*',
-                            'Access-Control-Allow-Methods':'POST',
-                            'Access-Control-Allow-Headers':'application/json',
-                        },
 						success: function(data) {
 							$('#email').val('');
 							alert('You have successfully subscribed to Soundmix')
@@ -99,7 +93,7 @@
         });
         function validateEmail(email)
         {
-			if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+			if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/.test(email)) {
 				return (true)
 			}
 			return (false)
