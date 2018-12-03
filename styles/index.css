@@ -23,7 +23,6 @@
 .rectangle-3 {
 	height: 40px;
 	border-radius: 2px;
-	cursor: pointer;
 	outline: none;
 }
 
@@ -36,6 +35,7 @@ body {
 	font-weight: 400;
 	font-size: 0.875em;
 	color: #fff;
+	background-color: #1b1b1b;
 }
 
 
@@ -100,7 +100,7 @@ body {
 						padding-left: 16px;
 						background-color: #f3f3f3;
 						border: none;
-						cursor: auto;
+						cursor: text;
 					}
 
 					form ::placeholder {
@@ -123,6 +123,20 @@ body {
 
 					form button:hover {
 						background-color: #eb3d3d;
+					}
+	
+				.store-icons {
+					margin-top: 30px;
+				}	
+					
+					.store-icons img {
+						width: 100px;
+						height: auto;
+						margin-right: 10px;
+					}
+					
+					.store-icons a:hover {
+						opacity: 0.6;
 					}
 	
 	footer {
@@ -311,6 +325,12 @@ body {
 		.contact div:last-child {
 			padding-top: 7px;
 		}	
+}
+
+@media screen and (max-width: 450px) {
+				h1 {
+					font-size: 1.5em;
+				}
 }
 
 @media screen and (max-height: 640px) {
