@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url("./fonts/opensans-regular.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("./fonts/opensans-bold.ttf");
+	font-weight: 700;
+}
+
+header {
+	border: 1px solid red;
+}
+
+.jobs {
+	border: 1px solid yellow;
+}
+
+.team {
+	border: 1px solid green;
+}
+
+.pics {
+	border: 1px solid pink;
+}
+
+footer {
+	border: 1px solid blue;
+}
