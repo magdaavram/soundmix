@@ -87,6 +87,10 @@ body {
 
 				form {
 					margin-top: 30px;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flexbox;
+					display: -o-flex;
 					display: flex;
 				}
 
@@ -105,6 +109,7 @@ body {
 
 					form ::placeholder {
 						color: #000;
+						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 						opacity: 0.5;
 					}
 
@@ -136,6 +141,7 @@ body {
 					}
 					
 					.store-icons a:hover {
+						-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 						opacity: 0.6;
 					}
 	
@@ -148,6 +154,10 @@ body {
 			top: 56px;
 			right: 7.65%;
 			left: initial;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flexbox;
+			display: -o-flex;
 			display: flex;
 			z-index: 200;
 		}
@@ -166,6 +176,7 @@ body {
 				}
 		
 				.social li a:hover {
+					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 					opacity: 0.6;
 				}
 		
@@ -203,8 +214,13 @@ body {
 		.contact {
 			width: 84.7%;
 			bottom: 40px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flexbox;
+			display: -o-flex;
 			display: flex;
 			justify-content: space-between;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 			opacity: 0.5;
 		}
 
@@ -255,17 +271,15 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-	.overlay {
+	.overlay, .bg-video video {
 		display: none;
 	}
+	
 	.bg-video {
 		background-image: url("../media/video.png");
 		background-size: cover;
 		height: auto;
 	}
-		.bg-video video {
-			display: none;
-		}
 
 		.content-base {
 			text-align: center;
@@ -278,6 +292,10 @@ body {
 			}
 	
 			form {
+				-webkit-flex-direction: column;
+				-moz-flex-direction: column;
+				-ms-flex-direction: column;
+				-o-flex-direction: column;
 				flex-direction: column;
 				align-items: center;
 			}
@@ -307,6 +325,10 @@ body {
 
 		.social {
 			width: 84.7%;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
 			flex-direction: column;
 			text-align: center;
 			padding-top: 24px;
@@ -322,6 +344,10 @@ body {
 	
 
 		.contact {
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
 			flex-direction: column;
 			text-align: center;
 			padding: 24px 0 36px 0;
