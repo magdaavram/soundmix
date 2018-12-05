@@ -159,6 +159,11 @@ body {
 			display: -ms-flexbox;
 			display: -o-flex;
 			display: flex;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
 			z-index: 200;
 		}
 
@@ -193,7 +198,6 @@ body {
 				}
 	
 			.social a.rectangle-3 {
-				display: none;
 				width: 70px;
 				text-align: center;
 				font-weight: 700;
@@ -219,6 +223,10 @@ body {
 			display: -ms-flexbox;
 			display: -o-flex;
 			display: flex;
+			-webkit-justify-content: space-between;
+			-moz-justify-content: space-between;
+			-ms-justify-content: space-between;
+			-o-justify-content: space-between;
 			justify-content: space-between;
 			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 			opacity: 0.5;
@@ -296,7 +304,15 @@ body {
 				-moz-flex-direction: column;
 				-ms-flex-direction: column;
 				-o-flex-direction: column;
+				-webkit-flex-direction: column;
+				-moz-flex-direction: column;
+				-ms-flex-direction: column;
+				-o-flex-direction: column;
 				flex-direction: column;
+				-webkit-align-items: center;
+				-moz-align-items: center;
+				-ms-align-items: center;
+				-o-align-items: center;
 				align-items: center;
 			}
 
