@@ -35,7 +35,7 @@ body {
 
 	header {
 		position: relative;
-		height: 500px;
+		height: 400px;
 		background-image: url("../media/jobs/background.png");
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -69,16 +69,13 @@ body {
 
 				.headline {
 					font-size: 4em;
-					margin: 75px 0 16px 0;
+					margin: 45px 0 16px 0;
 				}
 
 	
 	.jobs, .team {
 		border-bottom: 1px solid;
 		border-bottom-color: rgba(0, 0, 0, 0.2);
-	}
-
-	.jobs {
 		padding-bottom: 64px;
 	}
 
@@ -100,7 +97,13 @@ body {
 
 			.jobs-content h1 {
 				font-size: 2.29em;
-				margin: 32px 0 45px 0;
+				text-transform: uppercase;
+				margin-top: 32px;
+			}
+			
+			.jobs-content h2 {
+				font-size: 1.71em;
+				margin-bottom: 45px;
 			}
 
 
@@ -178,7 +181,7 @@ body {
 				margin: 40px auto 64px auto;
 			}
 
-				.team-content h3 {
+				.team-header h3, .slide-pics h3 {
 					font-size: 2.29em;
 					text-transform: uppercase;
 					margin-bottom: 38px;
@@ -210,7 +213,7 @@ body {
 					display: -ms-flexbox;
 					display: -o-flex;
 					display: flex;
-					padding: 24px 0 32px 0;
+					padding: 24px 0;
 					margin-bottom: 48px;
 					text-align: left;
 					border: 1px solid;
@@ -286,11 +289,73 @@ body {
 									.member-linkedin {
 										background-image: url("../media/icons/linkedin_black.png");
 									}
+								
+						.advisor-description {
+							margin-top: 9px;
+							color: rgba(0, 0, 0, 0.5);
+						}
 
 
-	.pics {
-		display: none;
+	.slide-pics {
+		width: 59.3%;
+		margin: auto;
+		text-align: center;
+		margin-top: 40px;
 	}
+		
+	.slide-pics-container {
+		height: 480px;
+		background-color: #000;
+		position: relative;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flexbox;
+		display: -o-flex;
+		display: flex;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		-o-align-items: center;
+		align-items: center;
+	}
+			.slide-picture {
+				width: 100%;
+				margin: auto;
+				max-height: 480px;
+				height: auto;
+				display: none;
+				object-fit: contain;
+			}
+
+			.slide-button {
+				width: 48px;
+				height: 48px;
+				position: absolute;
+				background-color: #000;
+				border: 0;
+				border-radius: 100px;
+			}
+			
+			button {
+				outline: 0;
+			}
+			
+			button:hover {
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+				opacity: 0.9;
+			}
+			
+			.slide-display-left {
+				top: 50%;
+				left: 32px;
+				z-index: 200;
+			}
+			
+			.slide-display-right {
+				top: 50%;
+				right: 32px;
+				z-index: 200;
+			}
 
 
 	footer {
@@ -445,12 +510,30 @@ body {
 				.member:not(:last-child) {
 					margin-bottom: 48px;
 				}
+				
+				
+				
+		.slide-pics {
+			width: 70%;
+		}
+		
+			.slide-pics-container {
+				height: 354px;
+			}
+			
+			.slide-display-left {
+				left: 24px;
+			}
+			
+			.slide-display-right {
+				right: 24px;
+			}
 }
 
 
 @media screen and (max-width: 600px) {
 	header {
-		height: 400px;
+		height: 300px;
 	}
 	
 		.overlay {
@@ -470,6 +553,23 @@ body {
 				.job, .member {
 					width: 84.72%;
 				}
+	
+			
+		.slide-pics {
+			width: 84.72%;
+		}
+		
+			.slide-pics-container {
+				height: 286px;
+			}
+			
+			.slide-display-left {
+				left: 20px;
+			}
+			
+			.slide-display-right {
+				right: 20px;
+			}
 	
 	
 		.social, .contact {
@@ -534,4 +634,18 @@ body {
 					.member-info {
 						margin-left: 34px;
 					}
+					
+			
+			.slide-button {
+				width: 40px;
+				height: 40px;
+			}
+					
+			.slide-display-left {
+				left: 12px;
+			}
+			
+			.slide-display-right {
+				right: 12px;
+			}			
 }
