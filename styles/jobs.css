@@ -45,7 +45,7 @@ body {
 		.overlay {
 			position: absolute;
 			height: 500px;
-			width: 100%;	
+			width: 100%;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
@@ -72,7 +72,7 @@ body {
 					margin: 45px 0 16px 0;
 				}
 
-	
+
 	.jobs, .team {
 		border-bottom: 1px solid;
 		border-bottom-color: rgba(0, 0, 0, 0.2);
@@ -100,7 +100,7 @@ body {
 				text-transform: uppercase;
 				margin-top: 32px;
 			}
-			
+
 			.jobs-content h2 {
 				font-size: 1.71em;
 				margin-bottom: 45px;
@@ -226,7 +226,7 @@ body {
 						height: 96px;
 						background-size: cover;
 						background-repeat: no-repeat;
-						border-radius: 100px;
+						border-radius: 50%;
 						margin: 0 24px;
 					}
 
@@ -242,7 +242,7 @@ body {
 						.member-info span {
 							display: block;
 						}
-						
+
 						.position {
 							margin-bottom: 4px;
 						}
@@ -289,7 +289,7 @@ body {
 									.member-linkedin {
 										background-image: url("../media/icons/linkedin_black.png");
 									}
-								
+
 						.advisor-description {
 							margin-top: 9px;
 							color: rgba(0, 0, 0, 0.5);
@@ -302,7 +302,7 @@ body {
 		text-align: center;
 		margin-top: 40px;
 	}
-		
+
 		.slide-pics-container {
 			height: 480px;
 			background-color: #000;
@@ -318,7 +318,7 @@ body {
 			-o-align-items: center;
 			align-items: center;
 		}
-		
+
 			.slide-picture {
 				width: 100%;
 				margin: auto;
@@ -334,24 +334,24 @@ body {
 				position: absolute;
 				background-color: #000;
 				border: 0;
-				border-radius: 100px;
+				border-radius: 50%;
 			}
-			
+
 			button {
 				outline: 0;
 			}
-			
+
 			button:hover {
 				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 				opacity: 0.9;
 			}
-			
+
 			.slide-display-left {
 				top: 50%;
 				left: 32px;
 				z-index: 200;
 			}
-			
+
 			.slide-display-right {
 				top: 50%;
 				right: 32px;
@@ -412,7 +412,7 @@ body {
 					#linkedin {
 						background-position: 32px 0;
 					}
-	
+
 					.social a.rectangle-3 {
 						width: 70px;
 						text-align: center;
@@ -424,12 +424,12 @@ body {
 						padding-bottom: 8px;
 						border: 1px solid #ff5151;
 					}
-	
+
 					.social a.rectangle-3:hover {
 						background-color: #ff5151;
 					}
-	
-	
+
+
 		.contact {
 			margin-bottom: 45px;
 			display: -webkit-flex;
@@ -450,8 +450,8 @@ body {
 				.contact li {
 					display: inline-block;
 				}
-	
-				.contact li:not(:last-child):after {	
+
+				.contact li:not(:last-child):after {
 					content: "•";
 					padding: 0 10px;
 				}
@@ -460,16 +460,16 @@ body {
 						color: #000;
 						text-decoration: none;
 					}
-		
+
 					.contact a:hover {
 						text-decoration: underline;
 					}
-	
+
 			.contact div:last-child {
 				margin-left: 20px;
 			}
-	
-	
+
+
 
 @media screen and (max-width: 900px) {
 				.headline {
@@ -511,25 +511,25 @@ body {
 				.member:not(:last-child) {
 					margin-bottom: 48px;
 				}
-				
-				
-				
+
+
+
 	.slide-pics {
 		width: 70%;
 	}
-		
+
 		.slide-pics-container {
 			height: 354px;
 		}
-			
+
 			.slide-picture {
 				max-height: 354px;
 			}
-			
+
 			.slide-display-left {
 				left: 24px;
 			}
-			
+
 			.slide-display-right {
 				right: 24px;
 			}
@@ -540,17 +540,17 @@ body {
 	header {
 		height: 300px;
 	}
-	
+
 		.overlay {
 			height: 400px;
 		}
-		
+
 			.logo {
 				text-align: center;
 			}
 
 				.headline {
-					font-size: 2.28em;	
+					font-size: 2.28em;
 				}
 
 
@@ -558,29 +558,29 @@ body {
 				.job, .member {
 					width: 84.72%;
 				}
-	
-			
+
+
 	.slide-pics {
 		width: 84.72%;
 	}
-		
+
 		.slide-pics-container {
 			height: 286px;
 		}
-			
+
 			.slide-picture {
 				max-height: 286px;
 			}
-			
+
 			.slide-display-left {
 				left: 20px;
 			}
-			
+
 			.slide-display-right {
 				right: 20px;
 			}
-	
-	
+
+
 		.social, .contact {
 			position: initial;
 			-webkit-flex-direction: column;
@@ -590,29 +590,29 @@ body {
 			flex-direction: column;
 			text-align: center;
 		}
-	
+
 			.social ul {
 				margin-bottom: 32px;
 			}
-	
+
 					.social a.rectangle-3 {
 						color: #000;
 						margin: auto;
 						margin-bottom: 32px
 					}
-	
-	
+
+
 					.contact li {
 						display: block;
 						padding-bottom: 11px;
 					}
-	
+
 					.contact li:not(:last-child):after {
 						content: "";
 						padding: 0;
 					}
-	
-	
+
+
 				.contact div:last-child {
 					padding-top: 7px;
 				}
@@ -624,7 +624,7 @@ body {
 	font-size: 0.8em;
 }
 
-	
+
 				.member {
 					-webkit-flex-direction: column;
 					-moz-flex-direction: column;
@@ -633,28 +633,28 @@ body {
 					flex-direction: column;
 					text-align: center;
 				}
-	
+
 					.member-pic {
 						width: 96px;
 						margin: auto;
 						margin-bottom: 28px;
 					}
-	
+
 					.member-info {
 						margin-left: 34px;
 					}
-					
-			
+
+
 			.slide-button {
 				width: 40px;
 				height: 40px;
 			}
-					
+
 			.slide-display-left {
 				left: 12px;
 			}
-			
+
 			.slide-display-right {
 				right: 12px;
-			}			
+			}
 }
