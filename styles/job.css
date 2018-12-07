@@ -61,6 +61,14 @@ body {
 				list-style-position: inside;
 			}
 
+			.social-job-button {
+				color: white;
+				background-color: #ff5151;
+				padding: 10px 20px;
+				border-radius: 3px;
+				text-decoration: none;
+				font-weight: 700;
+			}
 
 footer {
 	width: 84.7%;
