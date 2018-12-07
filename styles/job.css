@@ -28,7 +28,7 @@ body {
 		height: 120px;
 		background-color: #000;
 	}
-	
+
 		.logo {
 			width: 84.72%;
 			margin: auto;
@@ -51,7 +51,7 @@ body {
 				font-weight: 700;
 				margin-bottom: 24px;
 			}
-			
+
 			article p, article ul {
 				margin-bottom: 24px;
 			}
@@ -154,7 +154,7 @@ footer {
 				display: inline-block;
 			}
 
-			.contact li:not(:last-child):after {	
+			.contact li:not(:last-child):after {
 				content: "•";
 				padding: 0 10px;
 			}
@@ -163,7 +163,7 @@ footer {
 					color: #000;
 					text-decoration: none;
 				}
-	
+
 				.contact a:hover {
 					text-decoration: underline;
 				}
@@ -171,8 +171,8 @@ footer {
 		.contact div:last-child {
 			margin-left: 20px;
 		}
-		
-		
+
+
 
 @media screen and (max-width: 900px) {
 	article {
@@ -185,7 +185,7 @@ footer {
 	.logo {
 		text-align: center;
 	}
-	
+
 
 	.social, .contact {
 		position: initial;
