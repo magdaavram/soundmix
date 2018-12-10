@@ -52,6 +52,15 @@ body {
 				margin-bottom: 24px;
 			}
 
+				article h2 a {
+					color: #0e6ddc;
+					text-decoration: none;
+				}
+
+				article h2 a:hover {
+					color: #ff5151;
+				}
+
 			article p, article ul {
 				margin-bottom: 24px;
 			}
