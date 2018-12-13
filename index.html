@@ -19,8 +19,6 @@
 		<meta name="twitter:title" content="Soundmix | Experience Live Electronic Music" />
 		<meta name="twitter:description" content="Connect by listening to and interacting about electronic music together" />
 		<meta name="twitter:image" content="./media/icons/share.jpg" />
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -38,7 +36,7 @@
 						Subscribe to be the first to find out when.</p>
 
 					<form id="submit-form">
-						<input class="rectangle-3" id="email" type="email" name="email" placeholder="E-mail address">
+						<input class="rectangle-3" id="email" type="email" name="email" placeholder="E-mail address" required>
 						<button class="rectangle-3" id="subscribe">Subscribe</button>
 					</form>
 
@@ -64,7 +62,7 @@
 					<li><a href="https://www.instagram.com/soundmix.livemusic/" target="_blank" id="instagram"></a></li>
 					<li><a href="https://www.linkedin.com/company/soundmixlive" target="_blank" id="linkedin"></a></li>
 				</ul>
-				<a class="rectangle-3" href="./jobs">Join our team!</a>
+				<a class="rectangle-3" href="./jobs">Jobs</a>
 			</div>
 
 			<div class="contact middle">
@@ -82,40 +80,4 @@
 			</div>
 		</footer>
 	</body>
-	<script>
-        $(document).ready(function(){
-            $("#subscribe").click(function(event){
-                event.preventDefault();
-                var email = $('#email').val();
-                if (validateEmail(email)) {
-                    $.ajax({
-                        url:"https://api.soundmix.live/v1.0/subscriptions",
-                        type:"POST",
-                        data:JSON.stringify({
-                            "email": email
-                        }),
-                        contentType:"application/json; charset=utf-8",
-                        dataType:"json",
-						success: function(data) {
-							$('#email').val('');
-							alert('You have successfully subscribed to Soundmix')
-                        },
-                        error: function() {
-                            alert('Oops, something went wrong!')
-                        }
-                    });
-
-                } else {
-                    alert("Please enter a valid email address")
-				}
-            });
-        });
-        function validateEmail(email)
-        {
-			if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/.test(email)) {
-				return (true)
-			}
-			return (false)
-        }
-	</script>
 </html>
